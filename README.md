@@ -1,2 +1,2 @@
-# TP-enA61-prod
-cours 61
+# cours-A61
+Préparation de la solution d'IA pour la mise en production
