@@ -1,0 +1,8 @@
+action: regression_model, msg: getenv
+cwd: C:\Users\Dell\Desktop\cours-A61\cours-A61\packages\regression_model\.tox
+cmd: 'c:\users\dell\desktop\cours-a61\enva61-prod\scripts\python.exe' -m virtualenv --no-download --python 'c:\users\dell\desktop\cours-a61\enva61-prod\scripts\python.exe' regression_model
+created virtual environment CPython3.8.1.final.0-64 in 610ms
+  creator CPython3Windows(dest=C:\Users\Dell\Desktop\cours-A61\cours-A61\packages\regression_model\.tox\regression_model, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Dell\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==20.2.4, setuptools==51.0.0, wheel==0.35.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
