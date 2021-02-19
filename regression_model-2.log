@@ -1,0 +1,11 @@
+action: regression_model, msg: envreport
+cwd: C:\Users\Dell\Desktop\cours-A61\cours-A61\packages\regression_model
+cmd: 'C:\Users\Dell\Desktop\cours-A61\cours-A61\packages\regression_model\.tox\regression_model\Scripts\python.EXE' -m pip freeze
+joblib==0.14.1
+numpy==1.18.5
+pandas==0.25.3
+python-dateutil==2.8.1
+pytz==2020.5
+scikit-learn==0.22.2.post1
+scipy==1.6.0
+six==1.15.0

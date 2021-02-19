@@ -1,0 +1,23 @@
+action: regression_model, msg: getenv
+cwd: C:\Users\Dell\Desktop\cours-A61\cours-A61\packages\regression_model
+cmd: 'C:\Users\Dell\Desktop\cours-A61\cours-A61\packages\regression_model\.tox\regression_model\Scripts\pip.EXE' install -rrequirements.txt
+Collecting numpy<1.19.0,>=1.18.1
+  Using cached numpy-1.18.5-cp38-cp38-win_amd64.whl (12.8 MB)
+Collecting pandas<0.26.0,>=0.25.3
+  Using cached pandas-0.25.3-cp38-cp38-win_amd64.whl (9.4 MB)
+Collecting scikit-learn<0.23.0,>=0.22.1
+  Using cached scikit_learn-0.22.2.post1-cp38-cp38-win_amd64.whl (6.6 MB)
+Collecting joblib<0.15.0,>=0.14.1
+  Using cached joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+Collecting python-dateutil>=2.6.1
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting pytz>=2017.2
+  Using cached pytz-2020.5-py2.py3-none-any.whl (510 kB)
+Collecting scipy>=0.17.0
+  Using cached scipy-1.6.0-cp38-cp38-win_amd64.whl (32.7 MB)
+Collecting six>=1.5
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Installing collected packages: numpy, six, python-dateutil, pytz, pandas, joblib, scipy, scikit-learn
+Successfully installed joblib-0.14.1 numpy-1.18.5 pandas-0.25.3 python-dateutil-2.8.1 pytz-2020.5 scikit-learn-0.22.2.post1 scipy-1.6.0 six-1.15.0
+WARNING: You are using pip version 20.2.4; however, version 20.3.3 is available.
+You should consider upgrading via the 'C:\Users\Dell\Desktop\cours-A61\cours-A61\packages\regression_model\.tox\regression_model\Scripts\python.exe -m pip install --upgrade pip' command.
