@@ -32,3 +32,6 @@ def make_prediction(*, input_data) -> dict:
     )
 
     return results
+
+def testPrint():
+    print("WWWWWWWWWWWWOOOOOOOOOOOORRRRRRRRRKKKKKKKKKS")

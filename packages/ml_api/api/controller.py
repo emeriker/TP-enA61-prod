@@ -2,15 +2,17 @@ from flask import Blueprint, request, jsonify
 from regression_model.predict import make_prediction
 from regression_model import __version__ as _version
 
-from ml_api.api.config import get_logger
-from ml_api.api.validation import validate_inputs
+from config import get_logger
+from validation import validate_inputs
 #from ml_api.api import __version__ as api_version
 #api_version = '0.2.0'
 
 import os
-file_path = str(os.getcwd()) + '/VERSION'
-print(file_path)
-with open(file_path) as file:
+absoPathVersion = ''
+for folder in str(os.path.realpath(__file__)).split('/')[:-1]:
+    absoPathVersion += folder + '/'
+absoPathVersion += '../VERSION'
+with open(absoPathVersion) as file:
     api_version = file.read().replace('\n', '')
 
 _logger = get_logger(logger_name=__name__)

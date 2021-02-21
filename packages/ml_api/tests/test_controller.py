@@ -7,10 +7,14 @@ import math
 
 #from ml_api.api import __version__ as api_version
 import os
-file_path = str(os.getcwd()) + '/VERSION'
-print(file_path)
-with open(file_path) as file:
+absoPathVersion = ''
+for folder in str(os.path.realpath(__file__)).split('/')[:-1]:
+    absoPathVersion += folder + '/'
+absoPathVersion += '../VERSION'
+with open(absoPathVersion) as file:
     api_version = file.read().replace('\n', '')
+
+
 
 
 def test_health_endpoint_returns_200(flask_test_client):
