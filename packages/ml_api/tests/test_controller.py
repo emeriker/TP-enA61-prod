@@ -5,7 +5,12 @@ from regression_model import __version__ as _version
 import json
 import math
 
-from api import __version__ as api_version
+#from ml_api.api import __version__ as api_version
+import os
+file_path = str(os.getcwd()) + '/VERSION'
+print(file_path)
+with open(file_path) as file:
+    api_version = file.read().replace('\n', '')
 
 
 def test_health_endpoint_returns_200(flask_test_client):
@@ -38,12 +43,12 @@ def test_prediction_endpoint_returns_prediction(flask_test_client):
 
     # When
     response = flask_test_client.post('/v1/predict/regression',
-                                      json=post_json)
+                                      json=json.loads(post_json))
 
     # Then
     assert response.status_code == 200
     response_json = json.loads(response.data)
     prediction = response_json['predictions']
     response_version = response_json['version']
-    assert math.ceil(prediction) == 112476
+    assert math.ceil(prediction[0]) == 112476
     assert response_version == _version
