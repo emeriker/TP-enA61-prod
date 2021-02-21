@@ -1,11 +1,15 @@
 import math
 
 import pathlib
-print(pathlib.Path().absolute())
+absoPath = str(pathlib.Path().absolute()) + '/..'
+print(absoPath)
+
+import sys
+sys.path.append(absoPath)
 
 
-from regression_model.regression_model.predict import make_prediction
-from regression_model.regression_model.processing.data_management import load_dataset
+from regression_model.predict import make_prediction
+from regression_model.processing.data_management import load_dataset
 
 
 def test_make_single_prediction():
