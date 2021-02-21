@@ -1,7 +1,11 @@
 import math
 
-from .regression_model.predict import make_prediction
-from .regression_model.processing.data_management import load_dataset
+import pathlib
+print(pathlib.Path().absolute())
+
+
+from regression_model.predict import make_prediction
+from regression_model.processing.data_management import load_dataset
 
 
 def test_make_single_prediction():
