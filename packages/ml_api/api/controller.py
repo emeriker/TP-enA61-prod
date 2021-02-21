@@ -8,9 +8,11 @@ from validation import validate_inputs
 #api_version = '0.2.0'
 
 import os
-file_path = str(os.getcwd()) + '/VERSION'
-print(file_path)
-with open(file_path) as file:
+absoPathVersion = ''
+for folder in str(os.path.realpath(__file__)).split('/')[:-1]:
+    absoPathVersion += folder + '/'
+absoPathVersion += '../VERSION'
+with open(absoPathVersion) as file:
     api_version = file.read().replace('\n', '')
 
 _logger = get_logger(logger_name=__name__)
