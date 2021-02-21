@@ -2,8 +2,8 @@ from flask import Blueprint, request, jsonify
 from regression_model.predict import make_prediction
 from regression_model import __version__ as _version
 
-from ml_api.api.config import get_logger
-from ml_api.api.validation import validate_inputs
+from config import get_logger
+from validation import validate_inputs
 #from ml_api.api import __version__ as api_version
 #api_version = '0.2.0'
 
